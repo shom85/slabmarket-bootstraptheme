@@ -1,5 +1,54 @@
+hr {
+	width: 100%;
+}
+
+/*Navigation Section*/
+
+.main_logo_image {
+	padding: 2% 0px;
+}
+
+@media screen and (min-width: 768px){
+	ul#naviMainList {
+	    width: 100%;
+	    display: flex;
+	    justify-content: space-between;
+	}
+	#naviMainList > li {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	ul#naviTopList {
+	    width: 100%;
+	    display: flex;
+	    justify-content: flex-end;
+	}
+}
+/*-------------------------------------------*/
+
+
+/*Left side tabs*/
+
+.your_container_tab > .panel-heading {
+	display: flex;
+	justify-content: space-between;
+}
+.ads_section {
+	display: flex;
+	justify-content: center;
+}
+/*-------------------------------------------*/
+
+/*Slab List & Slab Card Section*/
+
 .slab_card {
 	padding: 5px;
+}
+.slab_card .media-object {
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
 }
 
 .slab_card:hover > .panel-default {
@@ -19,3 +68,30 @@
 		margin: 0 auto;
 	}
 }
+/*-------------------------------------------*/
+
+
+/*Video Section */
+.video_section {
+	text-align: center;
+}
+
+.video_section > h2 {
+	padding: 25px 0;
+}
+/*-------------------------------------------*/
+
+/*Client Section */
+.client_review_section > h2 {
+	text-align: center;
+	padding: 25px 0;
+}
+/*-------------------------------------------*/
+
+/*Footer Section*/
+.footer_navi {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+/*-------------------------------------------*/

@@ -18,107 +18,221 @@
 <body>
   <div class="container-fluid">
     <div class="container"> <!-- MAIN CONTAINER -->
+
+      <div class="row col-sm-12">
+        <div class="col-sm-4 main_logo_image">
+          <img src="images/slab_market_logo.png" width="100%">
+        </div>
+        <div class="col-sm-8">        
+          <nav>
+            <div class="navbar" id="">
+              <ul class="nav navbar-nav" id="naviTopList">
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Container</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Sign In</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="row col-sm-12"> 
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav" id="naviMainList">
+                <li class="active"><a href="#">Slab Market<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">How To Buy</a></li>
+
+                <li><a href="#">How To Sell</a></li>
+                <li><a href="#">Slabs</a></li>
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+
       <div class="row">
 
-        <div class="container col-sm-3"> <!-- LEFT SIDE CONTAINER -->
-          <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Panel title</h3>
-                </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Go!</button>
-                  </span>
-                </div>
+        <!-- LEFT SIDE CONTAINER -->
+        <div class="container col-sm-3"> 
+
+          <div class="panel panel-default your_container_tab">
+            <div class="panel-heading">
+              <h3 class="panel-title">Your Container </h3>
+              <span class="glyphicon glyphicon-play-circle"></span>
+            </div>
+            <div>
+              <div class="panel-body">
+                <p>Your Container is Empty</p>
               </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Search by Name</h3>
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="panel panel-default ads_section">
+            <div class="panel-body">
+              <img src="images/ad_estimator3.jpg">
+            </div>
+          </div>
+
+          <div class="panel panel-default ads_section">
+            <div class="panel-body">
+              <img src="images/ad_mrstone4.jpg">
+            </div>
+          </div>
+
+
+
         </div>
 
         <!-- CONTAINER CONTAINS SLAB LIST / RIGHT SIDE CONTAINER -->
         <div class="container col-sm-9"> 
+
+          <div class="row col-sm-12" style="padding: 0px;">
+            
+            <div class="col-sm-12 col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Want to <span>buy</span> slabs?</h3>
+                </div>
+                <div class="panel-body">
+                  <p>Benefits</p>
+                  <ul>
+                    <li>Huge savings! No wholesalers!</li>
+                    <li>No Paperwork! We handle all documents!</li>
+                    <li>Choose from over 200 quarries in the world!</li>
+                    <li>Top Quality Slabs - we put our name on it!</li>
+                    <li>User friendly interface</li>
+                  </ul>
+                  <button type="button" class="btn btn-default pull-right">Choose Your Slab Now </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Want to <span>sell</span> slabs</h3>
+                </div>
+                <div class="panel-body">
+                  <p>Benefits</p>
+                  <ul>
+                    <li>No Fee to Join!</li>
+                    <li>You get to reach hundreds of fabricators, previously unknown to you!</li>
+                    <li>Orders are processed by AGM - the name you trust.</li>
+                  </ul>
+                  <button type="button" class="btn btn-default pull-right">Choose Your Slab Now </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
           
           <!-- First Row -->
           <div class="row col-sm-12 slab_list"> 
           
-            <div class="col-xs-12 col-sm-6 col-lg-4 slab_card">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 slab_card">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Panel title</h3>
+                  <h3 class="panel-title">Verde Labrador</h3>
                 </div>
                 <div class="panel-body">
                   <div class="media">
                     <div class="media-left">
                       <a href="#">
-                        <img class="media-object" src="https://www.placehold.it/100x100" alt="...">
+                        <img class="media-object" src="http://www.slabmarket.com/img/stonenophoto.png" alt="...">
                       </a>
                     </div>
                     <div class="media-right">
-                      <a href="#">
-                        <p>Lorem Ispum</p>
-                      </a>
+                        <p>Lorem Ispum <br/> <span>Inquire</span></p>
+                          <button type="button" class="btn btn-default">Details <span class="glyphicon glyphicon-chevron-right"></span></button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-4 slab_card">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 slab_card">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Panel title</h3>
+                  <h3 class="panel-title">New Persa</h3>
                 </div>
                 <div class="panel-body">
                   <div class="media">
                     <div class="media-left">
                       <a href="#">
-                        <img class="media-object" src="https://www.placehold.it/100x100" alt="...">
+                        <img class="media-object" src="http://www.slabmarket.com/core/storage/slabmarket/stone/1527_t.jpg" alt="...">
                       </a>
                     </div>
                     <div class="media-right">
-                      <a href="#">
-                        <p>Lorem Ispum</p>
-                      </a>
+                        <p>Granite <br/> <span>Inquire</span></p>
+                          <button type="button" class="btn btn-default">Details <span class="glyphicon glyphicon-chevron-right"></span></button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-4 slab_card">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 slab_card">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Panel title</h3>
+                  <h3 class="panel-title">Magma</h3>
                 </div>
                 <div class="panel-body">
                   <div class="media">
                     <div class="media-left">
                       <a href="#">
-                        <img class="media-object" src="https://www.placehold.it/100x100" alt="...">
+                        <img class="media-object" src="http://www.slabmarket.com/core/storage/slabmarket/stone/1209_t.jpg" alt="...">
                       </a>
                     </div>
                     <div class="media-right">
-                      <a href="#">
-                        <p>Lorem Ispum</p>
-                      </a>
+                        <p>Granite <br/> <span>$18.41/sq.ft.</span></p>
+                          <button type="button" class="btn btn-default">Details <span class="glyphicon glyphicon-chevron-right"></span></button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-4 slab_card">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 slab_card">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Panel title</h3>
+                  <h3 class="panel-title">Marmore Parana Calacatta</h3>
                 </div>
                 <div class="panel-body">
                   <div class="media">
                     <div class="media-left">
                       <a href="#">
-                        <img class="media-object" src="https://www.placehold.it/100x100" alt="...">
+                        <img class="media-object" src="http://www.slabmarket.com/core/storage/slabmarket/stone/936_t.jpg" alt="...">
                       </a>
                     </div>
                     <div class="media-right">
-                      <a href="#">
-                        <p>Lorem Ispum</p>
-                      </a>
+                        <p>Marble <br/> <span>Inquire</span></p>
+                          <button type="button" class="btn btn-default">Details <span class="glyphicon glyphicon-chevron-right"></span></button>
                     </div>
                   </div>
                 </div>
@@ -126,85 +240,81 @@
             </div>
 
           
-            <div class="col-xs-12 col-sm-6 col-lg-4 slab_card">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 slab_card">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Panel title</h3>
+                  <h3 class="panel-title">Light Green Onyx</h3>
                 </div>
                 <div class="panel-body">
                   <div class="media">
                     <div class="media-left">
                       <a href="#">
-                        <img class="media-object" src="https://www.placehold.it/100x100" alt="...">
+                        <img class="media-object" src="http://www.slabmarket.com/core/storage/slabmarket/stone/489_t.jpg" alt="...">
                       </a>
                     </div>
                     <div class="media-right">
-                      <a href="#">
-                        <p>Lorem Ispum</p>
-                      </a>
+                        <p>Onyx<br/> <span>$33.04/sq.ft</span></p>
+                          <button type="button" class="btn btn-default">Details <span class="glyphicon glyphicon-chevron-right"></span></button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-4 slab_card">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 slab_card">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Panel title</h3>
+                  <h3 class="panel-title">Tiger Skin Red</h3>
                 </div>
                 <div class="panel-body">
                   <div class="media">
                     <div class="media-left">
                       <a href="#">
-                        <img class="media-object" src="https://www.placehold.it/100x100" alt="...">
+                        <img class="media-object" src="http://www.slabmarket.com/core/storage/slabmarket/stone/8709_t.jpg" alt="...">
                       </a>
                     </div>
                     <div class="media-right">
-                      <a href="#">
-                        <p>Lorem Ispum</p>
-                      </a>
+                        <p>Granite <br/> <span>$1.10/sq.ft.</span></p>
+                          <button type="button" class="btn btn-default">Details <span class="glyphicon glyphicon-chevron-right"></span></button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-4 slab_card">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 slab_card">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Panel title</h3>
+                  <h3 class="panel-title">Cotton Candy</h3>
                 </div>
                 <div class="panel-body">
                   <div class="media">
                     <div class="media-left">
                       <a href="#">
-                        <img class="media-object" src="https://www.placehold.it/100x100" alt="...">
+                        <img class="media-object" src="http://www.slabmarket.com/core/storage/slabmarket/stone/9052_t.jpg" alt="...">
                       </a>
                     </div>
                     <div class="media-right">
-                      <a href="#">
-                        <p>Lorem Ispum</p>
-                      </a>
+                        <p>Onyx <br/> <span>Inquire</span></p>
+                          <button type="button" class="btn btn-default">Details <span class="glyphicon glyphicon-chevron-right"></span></button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-4 slab_card">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 slab_card">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Panel title</h3>
+                  <h3 class="panel-title">Giallo Artic</h3>
                 </div>
                 <div class="panel-body">
                   <div class="media">
                     <div class="media-left">
                       <a href="#">
-                        <img class="media-object" src="https://www.placehold.it/100x100" alt="...">
+                        <img class="media-object" src="http://www.slabmarket.com/core/storage/slabmarket/stone/135_t.jpg" alt="...">
                       </a>
                     </div>
                     <div class="media-right">
-                      <a href="#">
-                        <p>Lorem Ispum</p>
-                      </a>
+                        <p>Granite <br/> <span>$5.02/sq.ft.</span></p>
+                          <button type="button" class="btn btn-default">Details <span class="glyphicon glyphicon-chevron-right"></span></button>
                     </div>
                   </div>
                 </div>
@@ -214,6 +324,48 @@
           </div>
 
           <!-- End of Second Row -->
+
+          <div class="row">
+            <div class="col-sm-12 video_section">
+              <h2>Watch Slabmarket.com Overview</h2>
+              <iframe width="560" height="315" src="http://www.youtube.com/embed/FyPFXxBCYYc" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 client_review_section">
+              <h2>Clients Reviews</h2>
+              <div class="col-sm-6" style="border: 1px solid #ccc; border-radius: 2%; padding: 15px;">
+                <blockquote>
+                  <i>"Import straight from quarry at low prices"</i>
+                  <p class="pull-right">-says Mathew Anderson</p>
+                </blockquote>
+                <hr>
+                <p>Matt Anderson is the general manager of A&M Granite and a Slab Market user. Below is an interview about his experiences with Slab Market.</p>
+                <p><strong>Slab Market:</strong> Tell us a little bit about your company.</p>
+                <p><strong>Matt Anderson:</strong> My company A&M Granite has been in the industry for over ten years and we specialize in fabrication of natural stone countertops. We are a small fabricator located in the western United States and our goal is to provide affordable granite and marble tops. As with other smaller businesses in this industry, my company never had a large inventory. We would have sample slabs of the most popular colors in our yard for customers to see.></p>
+                <a class="pull-right">Read More</a>
+              </div>
+              <div class="col-sm-6" style="border: 1px solid #ccc; border-radius: 2%; padding: 15px;">
+                <blockquote>
+                  <i>"Attract previously unreachable clients"</i>
+                  <p class="pull-right">-says Roberto Vieira</p>
+                </blockquote>
+                <hr>
+                <p>Roberto Vieira is the CEO of BSE â€“ a brazilian granite manufacturer and exporter. Below are excerpts from our interview with him.</p>
+                <p><strong>Slab Market:</strong> Roberto, please give us some background information on your company.</p>
+                <p><strong>Roberto Vieira:</strong> Our company, BSE, is a medium-sized manufacturer and exporter of natural stone slabs in Brazil. Before finding out about Slab Market, we usually sold our material to large fabricators and warehouses. While business has always been there from the large warehouses, my quarryâ€™s vision is to expand and serve even the medium and small size fabricators directly.</p>
+                <a class="pull-right">Read More</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
 
         </div>
 
@@ -226,7 +378,20 @@
 <!-- ================================== Footer Section ==================================== -->
 <footer>
   <div class="container">
-
+    <div class="row panel-footer">
+      <div class="col-sm-9"> 
+        <ul class="footer_navi">
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Terms of Use</li>
+          <li>Terms of Sale</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <p>SlabMarket - @2004 - 2017 <br/> All Rights Reserved</p>
+      </div>
+    </div>
 
 
   </div>
