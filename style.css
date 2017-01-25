@@ -1,6 +1,15 @@
 hr {
 	width: 100%;
 }
+p, li {
+	/*font-size: 16px;*/
+}
+
+
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
 /*Navigation Section*/
 
 .navbar-collapse {
@@ -38,6 +47,11 @@ hr {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    padding: 0px;
+}
+
+.copy_right {
+	text-align: center;
 }
 /*-------------------------------------------*/
 
@@ -61,6 +75,18 @@ hr {
 .slab_card {
 	padding: 5px;
 }
+
+.slab_card .media {
+	display: flex;
+	justify-content: space-around;
+}
+.slab_card .panel-body {
+	padding: 5px;
+}
+.slab_card .media-left {
+	padding-right: 0px;
+}
+
 .slab_card .media-object {
 	width: 100px;
 	height: 100px;
@@ -134,4 +160,104 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
     text-indent: 10%;
 }
 */
+/*-------------------------------------------*/
 
+
+
+/*SLABS PAGE*/
+/*.all_slabs_with_dropdown {
+	display: flex;
+	justify-content: space-between;
+}*/
+.well-lg {
+    text-align: right;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.well-lg h4 {
+	float: left;
+}
+.all_slabs_with_dropdown {
+	margin: 10px
+}
+.all_slabs_with_dropdown p {
+	display: inline;
+}
+
+.page_navigation {
+	text-align: center;
+}
+
+/*-------------------------------------------*/
+
+
+
+/*SUPPLIERS PAGE*/
+.suppliers_card_list .card {
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    box-shadow: 0px 0px 15px #ccc;
+}
+.suppliers_card_list img.card-img-top {
+    border: 1px solid #ccc;
+    width: 100%
+
+}
+
+@media screen and (max-width: 600px){
+	.suppliers_card_list {
+		padding: 5px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.suppliers_card_list {
+		width: 50%;
+	}
+}
+
+/*-------------------------------------------*/
+
+/*HELP PAGE*/
+.list_of_questions > .panel.panel-default {
+	margin-bottom: 20px;
+}
+
+/*-------------------------------------------*/
+
+/*CONTACT US PAGE*/
+.form-group {
+	margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*width: 75%;*/	
+}
+
+.contact_info_card .media-left {
+    width: 40%;
+    text-align: center;
+}
+
+/*-------------------------------------------*/
+
+
+/*ABOUT US PAGE*/
+
+.about_us_section .col-sm-5 {
+	text-align: center;
+}
+.about_us_section .row {
+	padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+	.reverse_these_columns {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.about_us_section img {
+		width: 100%;
+	}
+}

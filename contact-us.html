@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <!-- MAIN CONTAINER -->
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="col-sm-4 main_logo_image">
+            <a href="index.html"><img src="images/slab_market_logo.png" width="100%"></a>
+          </div>
+          <div class="col-sm-8">
+            <nav>
+              <div class="navbar" id="">
+                <ul class="nav navbar-nav" id="naviTopList">
+                  <li><a href="#">Order Tracking</a></li>
+                  <li><a href="#">Container</a></li>
+                  <li><a href="#">My Account</a></li>
+                  <li><a href="#">Sign In</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav" id="naviMainList">
+                <li><a href="index.html">Slab Market</a></li>
+                <li><a href="how-to-buy.html">How To Buy</a></li>
+
+                <li><a href="how-to-sell.html">How To Sell</a></li>
+                <li><a href="slabs.html">Slabs</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li class="active"><a href="contact-us.html">Contact Us<!-- <span class="sr-only">(current)</span> --></a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="">Contact Us</h3>
+            </div>
+            <div class="panel-body">
+              <div class="col-md-12">
+                <p>Below you can see a list of suppliers currently offering slabs in our Slab Market™. In order to offer competitive pricing, the names of the suppliers are withheld. Therefore, they are identified by their ID number, country of origin and the number of colors available.</p>
+              </div>
+
+              <div class="contact_form_card col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4>Contact Form</h4>
+                  </div>
+                  <div class="panel-body">
+
+                    <p>Please fill in the following form to contact us.</p>                    
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputName1">Name*</label>
+                        <input type="name" required="true" class="form-control" id="exampleInputName1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address*</label>
+                        <input type="email" required="true"  class="form-control" id="exampleInputEmail1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPhone1">Phone</label>
+                        <input type="phone" class="form-control" id="exampleInputPhone1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputSubject1">Subject*</label>
+                        <input type="subject" required="true" class="form-control" id="exampleInputSubject1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputMessage1">Message*</label>
+                        <textarea type="message" required="true" class="form-control" id="exampleInputMessage1"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <p>You have 1000 characters left</p>
+                        <img src="images/code_example.png" style="object-fit: contain;">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputCode1">Code*</label>
+                        <input type="code" required="true" class="form-control" id="exampleInputCode1">
+                      </div>
+                      <button type="submit" class="btn btn-default pull-right">Submit</button>
+                      <button type="reset" class="btn btn-default pull-right" >Reset</button>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact_info_card col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4>Contact Info</h4>
+                  </div>
+                  <div class="panel-body">
+                    
+                    <div class="media">
+                      <div class="media-left">
+                        <span class="glyphicon glyphicon-earphone gi-4x"></span>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Phone Contact Information:</h4>
+                        <p>Mon - Fri 8:00am - 5:00pm EST</p>
+                        <p>Local: <a href="tel:+12016556464">(201) 655-6464</a></p>
+                        <p>Fax: <a href="tel:+12016556464">(201) 621-6169</a></p>
+                      </div>
+                    </div>
+
+                    <div class="media">
+                      <div class="media-left">
+                          <span class="glyphicon glyphicon-envelope gi-4x"></span>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Email Contact:</h4>
+                        <p>Please send email inquires to:</p>
+                        <p><a href="mailto:sm@marble.com">sm@marble.com</a></p>
+                      </div>
+                    </div>
+
+                    <div class="media">
+                      <div class="media-left">
+                          <span class="glyphicon glyphicon-edit gi-4x"></span>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Write To Us:</h4>
+                        <a href="https://www.google.com/maps/place/Marble.com/@40.8570847,-74.031489,16.99z/data=!4m5!3m4!1s0x89c2f761cecd90a1:0x1a991f48070da37f!8m2!3d40.8570849!4d-74.029264" target="_blank"><p>1 Mt Vernon St <br/> Ridgefield, Park,NJ 07660</p></a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- MAIN CONTAINER -->
+  </div>
+
+  <!-- ================================== Footer Section ==================================== -->
+<footer>
+  <div class="container-fluid panel-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9"> 
+          <ul class="footer_navi">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+            <li><a href="terms-of-sale.html">Terms of Sale</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 copy_right">
+          <p>SlabMarket - <span class="glyphicon glyphicon-copyright-mark"></span> 2004 - 2017 <br/> All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- ============================== End of Footer Section ================================= -->
+
+</body>
+</html>
