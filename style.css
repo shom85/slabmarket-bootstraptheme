@@ -85,12 +85,14 @@ p, li {
 }
 .slab_card .media-left {
 	padding-right: 0px;
+	display: flex;
+    align-items: center;
 }
 
 .slab_card .media-object {
-	width: 100px;
-	height: 100px;
-	object-fit: contain;
+    width: 70px;
+    height: 50px;
+    object-fit: cover;
 }
 
 .slab_card:hover > .panel-default {
