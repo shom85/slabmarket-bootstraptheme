@@ -217,13 +217,13 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
 }
 
 .card-block {
-    height: 115px;
+    height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .card-block > h4, .card-block > p {
-	margin: 0 0 5px;
+	margin: 0px;
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 	.suppliers_card_list {
