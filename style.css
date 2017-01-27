@@ -106,6 +106,12 @@ p, li {
     max-width: 350px;
 }
 
+h3.panel-title {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @media screen and (min-width: 500px) and (max-width: 767px) {
 	.slab_list {
 		max-width: 450px;
@@ -208,14 +214,24 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
 
 }
 
+@media screen and (max-width: 350px){
+	.suppliers_card_list {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 450px){
+	.suppliers_card_list {
+		width: 33.3%;
+	}
+}
 @media screen and (max-width: 600px){
 	.suppliers_card_list {
 		padding: 5px;
 	}
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
 	.suppliers_card_list {
-		width: 50%;
+		padding: 5px;
 	}
 }
 
@@ -254,6 +270,7 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
 	padding: 15px;
 }
 
+
 @media screen and (min-width: 768px) {
 	.reverse_these_columns {
 		display: flex;
@@ -261,5 +278,19 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
 	}
 	.about_us_section img {
 		width: 100%;
+	}
+}
+
+/*SIGN IN PAGE*/
+.buyer_seller_buttons {
+	display: flex;
+	justify-content: space-around;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 550px) {
+	.buyer_seller_buttons .btn-default {
+		width: 100px;
+		white-space: normal;
 	}
 }
