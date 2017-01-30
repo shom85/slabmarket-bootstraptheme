@@ -102,7 +102,7 @@ p, li {
 	    box-shadow: 0px 0px 13px #85A9B8;
 }
 
-.input-group {
+.search_by_name_container .input-group {
     position: relative;
     margin: 0 auto;
     padding: 35px 10px;
@@ -319,6 +319,24 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
     border-bottom-left-radius: 5px;
     margin-top: -2px;
     border-bottom-right-radius: 5px;
+}
+
+.order_here_section .well {
+	margin: 0px;	
+}
+
+.plus_minus_quantity {
+	padding-bottom: 15px;
+
+}
+.plus_minus_quantity .input-group-btn {
+	display: inline-flex;
+	padding-left: 26px;
+}
+.plus_minus_quantity .form-control.input-number {
+	float: none;
+	width: 50px;
+	text-align: center;
 }
 
 

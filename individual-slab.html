@@ -85,7 +85,7 @@
             </div>
           </div>
           
-          <div class="panel panel-default">
+          <div class="panel panel-default search_by_name_container">
             <div class="panel-heading">
               <h3 class="panel-title">Search by Name</h3>
             </div>
@@ -132,15 +132,15 @@
 
               <div class="col-sm-12 no-padding">
                 <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Inquire</h3>
+                  <div class="panel-heading" style="text-align: center;">
+                    <h3 class="panel-title">Inquire</h3> <!-- Or $Price/sq.ft -->
                     <p>Minimal Order: 2400 sq.ft. = 6 Bundles</p>
                   </div>
                 </div>
               </div>
 
 
-              <div class="col-sm-12 no-padding">
+              <div class="col-sm-12 no-padding order_here_section"> <!-- ADDED CLASS -->
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">Order Here</h3>
@@ -149,22 +149,41 @@
                     <table class="table">
                       <tbody>
                         <tr>
-                          <td>Thickness</td>
-                          <td>Slab Size</td>
-                          <td>Price</td>
+                          <td><b>Thickness</b></td>
+                          <td><b>Slab Size</b></td>
+                          <td><b>Price</b></td>
+                        </tr>
+                        <tr>
+                          <td>1 1/4</td>
+                          <td>129x74</td>
+                          <td>$11.59/sq/ft</td>
                         </tr>
                       </tbody>
                     </table>
-
-
-
-                    <p>Benefits</p>
-                    <ul>
-                      <li>No Fee to Join!</li>
-                      <li>You get to reach hundreds of fabricators, previously unknown to you!</li>
-                      <li>Orders are processed by AGM - the name you trust.</li>
-                    </ul>
-                    <a href="#"><button type="button" class="btn btn-default pull-right">List Your Inventory Now </button></a>
+                    <div class="input-group plus_minus_quantity"> <!-- ADDED CLASS -->
+                      <p><b>Bundle Quantities: </b></p> 
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                      <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                          <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                              <span class="glyphicon glyphicon-plus"></span>
+                          </button>
+                      </span>
+                    </div>
+                    <div class="well well-sm">
+                      <p>Coverage: 464.04 sq.ft</p>
+                    </div>
+                    <div class="well well-sm">
+                      <p>Slab Quantity: 7</p>
+                    </div>
+                    <div class="well well-lg">
+                      <p><b>Total Price: <span>$5378.22</span></b></p>
+                    </div>
+                    <div>
+                      <a href="container.html" type="button" class="btn btn-default pull-right" style="margin-top: 15px;">Add to Container</a>
+                    </div>
                   </div>
                 </div>
               </div>
