@@ -5,6 +5,9 @@ p, li {
 	/*font-size: 16px;*/
 }
 
+.no-padding {
+	padding: 0px;
+}
 
 .gi-2x{font-size: 2em;}
 .gi-3x{font-size: 3em;}
@@ -305,4 +308,22 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
 		width: 100px;
 		white-space: normal;
 	}
+}
+
+
+/*Individual Slab Page*/
+.tab_content_border {
+	border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    margin-top: -2px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+
+td {
+	border: 1px solid #ccc;
 }
