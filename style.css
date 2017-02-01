@@ -378,7 +378,8 @@ input.form-control.input-number {
     text-align: center;
 }
 
-.input-group-btn {
+
+.increase_decrease_button { /*affects container page and individual-slab page*/
     display: inline-flex;
     width: 100%;
 }

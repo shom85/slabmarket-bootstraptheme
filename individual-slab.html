@@ -117,7 +117,7 @@
 
           <div class="row" style="padding: 0px;"> <!-- Begin Row -->
 
-            <div class="col-sm-12 col-md-6"> <!-- Start of Individual slab image side -->
+            <div class="col-sm-12 col-md-7"> <!-- Start of Individual slab image side -->
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h3 class="panel-title">Individual Slab Name - Star White</h3>
@@ -126,9 +126,46 @@
                   <a href="#"><img src="images/star-white.jpg" style="width: 100%;"></a>
                 </div>
               </div>
+
+
+              <div class="btn-group btn-group-justified" role="tablist" aria-label="...">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Additional Pictures</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Description</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Technical Info</button>
+                </div>
+              </div>
+              <div class="tab-content tab_content_border">
+                <div role="tabpanel" class="tab-pane" id="tab1">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p>Tab 1</p>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tab2">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p>Tab 2</p>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tab3">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p>Tab 3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div> <!-- End of Individual slab image side -->
 
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-5">
 
               <div class="col-sm-12 no-padding">
                 <div class="panel panel-default">
@@ -162,7 +199,7 @@
                     </table>
                     <div class="input-group plus_minus_quantity"> <!-- ADDED CLASS -->
                       <p><b>Bundle Quantities: </b></p> 
-                      <span class="input-group-btn">
+                      <span class="input-group-btn increase_decrease_button"> <!-- Added class -->
                         <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
                             <span class="glyphicon glyphicon-minus"></span>
                         </button>
