@@ -72,50 +72,8 @@
 
       <div class="row"> <!-- Begin Row --> 
 
-        <!-- LEFT SIDE CONTAINER -->
-        <div class="container col-sm-3">
-
-          <div class="panel panel-default your_container_tab">
-            <div class="panel-heading">
-              <h3 class="panel-title">Your Container </h3>
-              <span class="glyphicon glyphicon-play-circle"></span>
-            </div>
-            <div>
-              <div class="panel-body">
-                <p>Your Container is Empty</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default search_by_name_container">
-            <div class="panel-heading">
-              <h3 class="panel-title">Search by Name</h3>
-            </div>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-
-          <div class="panel panel-default ads_section">
-            <div class="panel-body">
-              <a href="https://marble.com/estimate" target="_blank"><img src="images/ad_estimator3.jpg"></a>
-            </div>
-          </div>
-
-          <div class="panel panel-default ads_section">
-            <div class="panel-body">
-              <a href="http://mrstone.com/products/agm-daily-granite-and-marble-cleaner?variant=1186761993" target="_blank"><img src="images/ad_mrstone4.jpg"></a>
-            </div>
-          </div>
-
-        </div>
-        <!-- End of Left Side Container -->
-
-        <!-- CONTAINER CONTAINS SLAB LIST / RIGHT SIDE CONTAINER -->
-        <div class="container col-sm-9">
+        <!-- CONTAINER CONTAINS SLAB LIST -->
+        <div class="container col-sm-12">
 
           <!-- First Row -->
           <div class="row">
@@ -127,11 +85,126 @@
                   <h3>Container</h3>
                 </div>
 
-                <div class="panel-body">
-                  <div class="form-inline">
-                    <p>Your Container is Empty</p>
-                    <a href="index.html" class="btn btn-success">Continue Shopping</a>
+                <div class="col-sm-12 container_with_items"> <!-- Begin of Items Added to Container -->
+
+                  <div>
+                    <ul class="list-group col-sm-3">
+                      <li class="list-group-item">Name</li>
+                      <li class="list-group-item">
+                        <div>
+                          <p>Steel Grey Granite</p>
+                          <a href="#" class="btn btn-danger" style="padding:2px;">REMOVE</a>
+                        </div></li>
+                    </ul>
+                    <ul class="list-group col-sm-3">
+                      <li class="list-group-item">Details</li>
+                      <li class="list-group-item">
+                        <div>
+                          <div>
+                            <img src=" http://localhost/slabmarket.com/public/core/storage/slabmarket/stone/7004_t.jpg ">
+                          </div>
+                          <div>
+                            <span>
+                              Price per sqft: $0.00 <br/>
+                              Thicknetss: slab 1 1/4 <br/>
+                              Dimensions: 0in x 0in
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="list-group col-sm-3">
+                      <li class="list-group-item">Quantity</li>
+                      <li class="list-group-item">
+                        <div>
+                          <p>Bundle:</p>
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                  <span class="glyphicon glyphicon-plus"></span>
+                              </button>
+                          </span>
+                        </div>
+                        <div>
+                          <p>Slabs: 35</p>
+                        </div>
+                        <div>
+                          <p>Coverate: 0.00 sq.ft.</p>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="list-group col-sm-3">
+                      <li class="list-group-item">Subtotal</li>
+                      <li class="list-group-item">$ 0.00</li>
+                    </ul>
                   </div>
+                  <div class="well well-lg container_total_of_slabs">
+                    <p>Bundles: 7</p>
+                    <p>Slabs: 49</p>
+                    <p>Coverage: 0.00 sqft</p>
+                    <p>Weight: 0.00lb</p>
+                  </div>
+
+
+
+
+
+                  <!-- <table class="table">
+                      <tbody>
+                        <tr>
+                          <td><b>Name</b></td>
+                          <td><b>Details</b></td>
+                          <td><b>Quantity</b></td>
+                          <td><b>Subtotal</b></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div>
+                              <p>Steel Grey Granite</p>
+                              <a href="#" class="btn btn-danger" style="padding:2px;">REMOVE</a>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <img src="">
+                              <span>
+                                Price per sqft: $0.00 <br/>
+                                Thicknetss: slab 1 1/4 <br/>
+                                Dimensions: 0in x 0in
+                              </span>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <p>PLUS Bundles: 1</p>
+                              <p>MINUS Slabs: 7</p>
+                              <p>Coverage: 0.00 sq ft</p>
+                            </div>
+                          </td>
+                          <td>$0.00</td>
+                        </tr>
+                      </tbody>
+                    </table> -->
+                  
+                </div> <!-- End of Items Added to Container -->
+
+
+
+                <div class="panel-body">
+                    <!-- EMPTY CONTAINER - If your container is empty, display this message -->
+                  <div class="well well-sm text-center">
+                    <p>Your Container is Empty</p>
+                  </div>
+                    <!-- END OF EMPTY CONTAINER -->
+
+                  <div class="well well-sm text-right">
+                    <p>Total: $0.00</p>
+                  </div>
+                    
+                  <a href="index.html" class="btn btn-success pull-right">Continue Shopping</a>
                 </div>
 
               </div>

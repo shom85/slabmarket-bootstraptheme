@@ -180,13 +180,12 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
 	display: flex;
 	justify-content: space-between;
 }*/
-.well-lg {
+.right_side_slabs .well-lg {
     text-align: right;
-    position: relative;
     margin-bottom: 0px;
 }
 
-.well-lg h4 {
+.right_side_slabs .well-lg h4 {
 	float: left;
 }
 .all_slabs_with_dropdown {
@@ -295,6 +294,7 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
 		width: 100%;
 	}
 }
+/*-------------------------------------------*/
 
 /*SIGN IN PAGE*/
 .buyer_seller_buttons {
@@ -309,6 +309,7 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
 		white-space: normal;
 	}
 }
+/*-------------------------------------------*/
 
 
 /*Individual Slab Page*/
@@ -338,10 +339,52 @@ div#tab1 > .left-section, div#tab2 > .left-section, div#tab3 > .left-section {
 	width: 50px;
 	text-align: center;
 }
+/*-------------------------------------------*/
 
 
-
-
-td {
+/*Container Page*/
+/*td {
 	border: 1px solid #ccc;
+}*/
+
+.container_with_items .list-group {
+    padding: 0;
+    margin-bottom: 0px;
+
 }
+
+.container_with_items .list-group-item:nth-child(2) {
+	height: 150px;
+}
+
+.container_with_items .list-group-item:nth-child(2) p {
+	margin-bottom: 0px;
+}
+.container_total_of_slabs {
+	display: flex;
+	justify-content: space-around;
+}
+
+button.btn.btn-default.btn-number {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+input.form-control.input-number {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.input-group-btn {
+    display: inline-flex;
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+	.container_total_of_slabs {
+		flex-direction: column;
+		}
+}
+/*-------------------------------------------*/
