@@ -105,7 +105,7 @@
                                     </div>
 
 <form role="form" action="" method="post"> <!-- Begin Form -->
-    <div class="row setup-content" id="step-1">
+    <div class="row setup-content" id="step-1"> <!-- STEP 1 -->
         <div class="col-md-12">
             <h3> Order Information</h3>
             <div class="form-group col-sm-6">
@@ -208,8 +208,9 @@
 
             <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
         </div>
-    </div>
-    <div class="row setup-content" id="step-2">
+    </div> <!-- END OF STEP 1 -->
+
+    <div class="row setup-content" id="step-2"> <!-- STEP 2 -->
         <div class="col-md-12">
             <h3> Confirmation</h3>
             <div class="col-sm-4">
@@ -304,7 +305,7 @@
         <div class="well well-sm form-check disabled col-xs-12 text-right">
             <h4>
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="" disabled>
+                    <input class="form-check-input" type="checkbox" value="" required="required"disabled>
                     I have read, understood and agree with all terms and conditions included in <a href="">Privacy Policy</a>, <a href="">Terms of Use</a> and <a href="">Terms of Sale</a>.
                 </label>
             </h4>
@@ -312,20 +313,103 @@
         <div class="col-sm-12">
             <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
         </div>
-            
+    </div> <!-- END OF STEP 2 -->
 
-
-    </div>
-    <div class="row setup-content" id="step-3">
-        <div class="col-xs-6">
+    <div class="row setup-content" id="step-3"> <!-- STEP 3 -->
             <div class="col-md-12">
                 <h3> Order Receipt</h3>
-                
-
-                <button class="btn btn-success btn-lg pull-right" type="submit">Submit</button>
+                <p>Thank you. Order receipt number: 6361</p>
+                <div>
+                    <p>Thank you for your order request. We will contact you to discuss the details of your order and give you the total price, including costs of delivery. Should you have any questions, or would like to change your order, use the <a href="contact-us.html">CONTACT PAGE</a>.</p>
+                </div>
+                <div class="col-sm-4">
+                    <table class="zebra_stripe"> 
+                      <h4 class="text-left">Shipping and Contact [<a href="#">Edit</a>]</h4>
+                      <tr>
+                        <td>Contact Person:</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                      <tr>
+                        <td>Company Name:</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                      <tr>
+                        <td>Address:</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                      <tr>
+                        <td>City:</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                      <tr>
+                        <td>State:</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                      <tr>
+                        <td>Zip Code:</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                      <tr>
+                        <td>Primary Phone</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                      <tr>
+                        <td>Additional Phone</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                      <tr>
+                        <td>Fax</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                      <tr>
+                        <td>Alternative Email</td>
+                        <td>Lorem Ipsum</td>
+                      </tr>
+                    </table> 
+                </div>
+                <div class="col-sm-8">
+                    <table> 
+                      <h4 class="text-left">Container Details [<a href="#">Edit</a>]</h4>
+                      <tr>
+                        <td class="col-xs-8">
+                            <div class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                  <img class="media-object" src="http://localhost/slabmarket.com/public/core/storage/slabmarket/stone/7004_t.jpg" alt="...">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                    Acupulco
+                                    Price per sqft: $$29.50 <br/>
+                                    Thicknetss: slab 1 1/4 <br/>
+                                    Dimensions: 117in x 70in
+                                    Bundles: 5 <br/>
+                                    Slabs: 36 <br/>
+                                    Coverage: 1990.62
+                              </div>
+                            </div>
+                        </td>
+                        <td class="col-xs-4 text-center">$58723.44</td>
+                      </tr>
+                      <tr>
+                        <td style="display: flex; justify-content: space-around;">
+                            <span>Bundles: 5</span>
+                            <span>Slab: 35</span>
+                            <span> Coverage: 1990.63</span>
+                        </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td class="text-right">Total:</td>
+                        <td class="text-center">$58723.59</td>
+                      </tr>
+                    </table>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <button class="btn btn-success btn-md" onclick="printButton()">Print Page</button>
+                </div>
             </div>
-        </div>
-    </div>
+    </div> <!-- END OF STEP 3 -->
 </form> <!-- End Form -->
 
                                 </div>
@@ -408,6 +492,11 @@
 
             $('div.setup-panel div a.btn-primary').trigger('click');
         });
+
+
+function printButton() {
+    window.print();
+}
 </script>
 
 </body>
