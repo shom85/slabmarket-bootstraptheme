@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- MAIN CONTAINER -->
+
+            <div class="row">
+                <!-- Begin Row -->
+                <div class="col-sm-12">
+                    <div class="col-sm-4 main_logo_image">
+                        <a href="index.html"><img src="images/slab_market_logo.png" width="100%"></a>
+                    </div>
+                    <div class="col-sm-8">
+                        <nav>
+                            <div class="navbar" id="">
+                                <ul class="nav navbar-nav" id="naviTopList">
+                                    <li><a href="order-tracking.html">Order Tracking</a></li>
+                                    <li><a href="container.html">Container</a></li>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="sign-in.html">Sign In</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- End Row -->
+
+            <div class="row">
+                <!-- Begin Row -->
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav" id="naviMainList">
+                                <li><a href="index.html">Slab Market</a></li>
+                                <li><a href="how-to-buy.html">How To Buy</a></li>
+
+                                <li><a href="how-to-sell.html">How To Sell</a></li>
+                                <li><a href="slabs.html">Slabs</a></li>
+                                <li><a href="suppliers.html">Suppliers</a></li>
+                                <li><a href="help.html">Help</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+            </div>
+            <!-- End Row -->
+
+
+                    <!-- First Row -->
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3>Order Information</h3>
+                                </div>
+
+                                <div class="panel-body">
+
+                                    <div class="stepwizard">
+                                        <div class="stepwizard-row setup-panel">
+                                            <div class="stepwizard-step">
+                                                <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                                                <p>ORDER INFO</p>
+                                            </div>
+                                            <div class="stepwizard-step">
+                                                <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                                <p>CONFIRMATION</p>
+                                            </div>
+                                            <div class="stepwizard-step">
+                                                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                                <p>ORDER RECEIPT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+<form role="form" action="" method="post"> <!-- Begin Form -->
+    <div class="row setup-content" id="step-1">
+        <div class="col-md-12">
+            <h3> Order Information</h3>
+            <div class="form-group col-sm-6">
+                <label class="control-label">Contact Person*</label>
+                <input maxlength="100" type="text" class="form-control" required />
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="control-label">Company Name*</label>
+                <input maxlength="100" type="text" required="required" class="form-control" />
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="control-label">Address*</label>
+                <input type="text" required="required" class="form-control" />
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="control-label">Address 2</label>
+                <input class="form-control" />
+            </div>
+            <div class="form-group col-sm-3">
+                <label class="control-label">Zip Code*</label>
+                <input maxlength="5" type="text" required="required" class="form-control" />
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="control-label">City*</label>
+                <input type="text" required="required" class="form-control" />
+            </div>
+            <div class="form-group col-sm-3">
+                <label class="control-label">State*</label>
+                <select name="state" required="true" size="1" style="height: 34px;  "> <!-- List of all States -->
+                    <option label="" value=""></option>
+                    <option label="Alabama" value="al">Alabama</option>
+                    <option label="Alaska" value="ak">Alaska</option>
+                    <option label="Arizona" value="az">Arizona</option>
+                    <option label="Arkansas" value="ar">Arkansas</option>
+                    <option label="California" value="ca">California</option>
+                    <option label="Colorado" value="co">Colorado</option>
+                    <option label="Connecticut" value="ct">Connecticut</option>
+                    <option label="Delaware" value="de">Delaware</option>
+                    <option label="District of Columbia" value="dc">District of Columbia</option>
+                    <option label="Florida" value="fl">Florida</option>
+                    <option label="Georgia" value="ga">Georgia</option>
+                    <option label="Hawaii" value="hi">Hawaii</option>
+                    <option label="Idaho" value="id">Idaho</option>
+                    <option label="Illinois" value="il">Illinois</option>
+                    <option label="Indiana" value="in">Indiana</option>
+                    <option label="Iowa" value="ia">Iowa</option>
+                    <option label="Kansas" value="ks">Kansas</option>
+                    <option label="Kentucky" value="ky">Kentucky</option>
+                    <option label="Louisiana" value="la">Louisiana</option>
+                    <option label="Maine" value="me">Maine</option>
+                    <option label="Maryland" value="md">Maryland</option>
+                    <option label="Massachusetts" value="ma">Massachusetts</option>
+                    <option label="Michigan" value="mi">Michigan</option>
+                    <option label="Minnesota" value="mn">Minnesota</option>
+                    <option label="Mississippi" value="ms">Mississippi</option>
+                    <option label="Missouri" value="mo">Missouri</option>
+                    <option label="Montana" value="mt">Montana</option>
+                    <option label="Nebraska" value="ne">Nebraska</option>
+                    <option label="Nevada" value="nv">Nevada</option>
+                    <option label="New Hampshire" value="nh">New Hampshire</option>
+                    <option label="New Jersey" value="nj">New Jersey</option>
+                    <option label="New Mexico" value="nm">New Mexico</option>
+                    <option label="New York" value="ny">New York</option>
+                    <option label="North Carolina" value="nc">North Carolina</option>
+                    <option label="North Dakota" value="nd">North Dakota</option>
+                    <option label="Ohio" value="oh">Ohio</option>
+                    <option label="Oklahoma" value="ok">Oklahoma</option>
+                    <option label="Oregon" value="or">Oregon</option>
+                    <option label="Pennsylvania" value="pa">Pennsylvania</option>
+                    <option label="Rhode Island" value="ri">Rhode Island</option>
+                    <option label="South Carolina" value="sc">South Carolina</option>
+                    <option label="South Dakota" value="sd">South Dakota</option>
+                    <option label="Tennessee" value="tn">Tennessee</option>
+                    <option label="Texas" value="tx">Texas</option>
+                    <option label="Utah" value="ut">Utah</option>
+                    <option label="Vermont" value="vt">Vermont</option>
+                    <option label="Virginia" value="va">Virginia</option>
+                    <option label="Washington" value="wa">Washington</option>
+                    <option label="West Virginia" value="wv">West Virginia</option>
+                    <option label="Wisconsin" value="wi">Wisconsin</option>
+                    <option label="Wyoming" value="wy">Wyoming</option>
+                </select> <!-- End of List of all States -->
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="control-label">Phone*</label>
+                <input type="tel" required="required" class="form-control" />
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="control-label">Additional Phone</label>
+                <input type="tel" class="form-control" />
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="control-label">Fax</label>
+                <input type="tel" class="form-control" />
+            </div>
+            <div class="form-group col-sm-6">
+                <label class="control-label">Additional Email</label>
+                <input maxlength="100" type="email" required="required" class="form-control" />
+            </div>
+
+            <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
+        </div>
+    </div>
+    <div class="row setup-content" id="step-2">
+        <div class="col-md-12">
+            <h3> Confirmation</h3>
+            <div class="col-sm-4">
+                <table class="zebra_stripe"> 
+                  <h4 class="text-left">Shipping and Contact [<a href="#">Edit</a>]</h4>
+                  <tr>
+                    <td>Contact Person:</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Company Name:</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Address:</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>City:</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>State:</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Zip Code:</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Primary Phone</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Additional Phone</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Fax</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Alternative Email</td>
+                    <td>Lorem Ipsum</td>
+                  </tr>
+                </table> 
+            </div>
+            <div class="col-sm-8">
+                <table> 
+                  <h4 class="text-left">Container Details [<a href="#">Edit</a>]</h4>
+                  <tr>
+                    <td class="col-xs-8">
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="http://localhost/slabmarket.com/public/core/storage/slabmarket/stone/7004_t.jpg" alt="...">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                                Acupulco
+                                Price per sqft: $$29.50 <br/>
+                                Thicknetss: slab 1 1/4 <br/>
+                                Dimensions: 117in x 70in
+                                Bundles: 5 <br/>
+                                Slabs: 36 <br/>
+                                Coverage: 1990.62
+                          </div>
+                        </div>
+                    </td>
+                    <td class="col-xs-4 text-center">$58723.44</td>
+                  </tr>
+                  <tr>
+                    <td style="display: flex; justify-content: space-around;">
+                        <span>Bundles: 5</span>
+                        <span>Slab: 35</span>
+                        <span> Coverage: 1990.63</span>
+                    </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td class="text-right">Total:</td>
+                    <td class="text-center">$58723.59</td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="well well-sm col-xs-12 text-center">
+            <h4>The price quoted above does not include shipping costs. In order to give you an accurate total, one of our representatives will contact you.</h4>
+        </div>
+
+        <div class="well well-sm form-check disabled col-xs-12 text-right">
+            <h4>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" disabled>
+                    I have read, understood and agree with all terms and conditions included in <a href="">Privacy Policy</a>, <a href="">Terms of Use</a> and <a href="">Terms of Sale</a>.
+                </label>
+            </h4>
+        </div>
+        <div class="col-sm-12">
+            <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
+        </div>
+            
+
+
+    </div>
+    <div class="row setup-content" id="step-3">
+        <div class="col-xs-6">
+            <div class="col-md-12">
+                <h3> Order Receipt</h3>
+                
+
+                <button class="btn btn-success btn-lg pull-right" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</form> <!-- End Form -->
+
+                                </div>
+
+                            </div>
+                            <!-- End of Panel Default -->
+
+                        </div>
+                    </div>
+
+        </div>
+        <!-- MAIN CONTAINER -->
+    </div>
+    <!-- End of Container-Fluid -->
+
+    <!-- ================================== Footer Section ==================================== -->
+    <footer>
+        <div class="container-fluid panel-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <ul class="footer_navi">
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="terms-of-sale.html">Terms of Sale</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 copy_right">
+                        <p>SlabMarket - <span class="glyphicon glyphicon-copyright-mark"></span> 2004 - 2017
+                            <br/> All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ============================== End of Footer Section ================================= -->
+
+        <script type="text/javascript">
+        $(document).ready(function() {
+            var navListItems = $('div.setup-panel div a'),
+            allWells = $('.setup-content'),
+            allNextBtn = $('.nextBtn');
+
+            allWells.hide();
+
+            navListItems.click(function(e) {
+                e.preventDefault();
+                var $target = $($(this).attr('href')),
+                $item = $(this);
+
+                if (!$item.hasClass('disabled')) {
+                    navListItems.removeClass('btn-primary').addClass('btn-default');
+                    $item.addClass('btn-primary');
+                    allWells.hide();
+                    $target.show();
+                    $target.find('input:eq(0)').focus();
+                }
+            });
+
+            allNextBtn.click(function() {
+                var curStep = $(this).closest(".setup-content"),
+                curStepBtn = curStep.attr("id"),
+                nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                curInputs = curStep.find("input[type='text'],input[type='url']"),
+                isValid = true;
+
+                $(".form-group").removeClass("has-error");
+                for (var i = 0; i < curInputs.length; i++) {
+                    if (!curInputs[i].validity.valid) {
+                        isValid = false;
+                        $(curInputs[i]).closest(".form-group").addClass("has-error");
+                    }
+                }
+
+                if (isValid)
+                    nextStepWizard.removeAttr('disabled').trigger('click');
+            });
+
+            $('div.setup-panel div a.btn-primary').trigger('click');
+        });
+</script>
+
+</body>
+
+</html>
