@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container"> <!-- MAIN CONTAINER -->
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="col-sm-4 main_logo_image">
+            <img src="images/slab_market_logo.png" width="100%">
+          </div>
+          <div class="col-sm-8">        
+            <nav>
+              <div class="navbar" id="">
+                <ul class="nav navbar-nav" id="naviTopList">
+                  <li><a href="order-tracking.html">Order Tracking</a></li>
+                  <li><a href="container.html">Container</a></li>
+                  <li><a href="my-account.html">My Account</a></li>
+                  <li><a href="sign-in.html">Sign In</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row"> 
+        <div class="col-sm-12">
+          <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav" id="naviMainList">
+                <li><a href="index.html">Slab Market</a></li>
+                <li><a href="how-to-buy.html">How To Buy</a></li>
+
+                <li><a href="how-to-sell.html">How To Sell</a></li>
+                <li><a href="slabs.html">Slabs</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div>
+
+      <div class="row"> <!-- Begin Row -->
+        <div class="col-sm-12"> <!-- Begin Column -->
+
+          <div class="panel panel-default panel_with_tabs">
+            <div class="panel-heading">
+              <h3>Account #2884</h3>
+            </div>
+            <div class="panel-body">
+              
+              <div class="search_for_stones custom_padding"> <!-- STONE SEARCH SECTION -->
+                Stone (Search)
+                <div class="col-sm-12 border_seperator well-lg text-center">
+                  <div style="padding-bottom: 15px;">
+                    <span>Stone</span>
+                    <input type="text" class="form-control" placeholder="Search our database for stones" style="width: 100%; max-width: 350px; display: inline;">
+                  </div>
+                  <div>
+                    <button class="btn btn-success btn-sm">Search</button>
+                    <button class="btn btn-danger btn-sm">Reset</button>
+                  </div>
+                </div>
+              </div> <!-- END OF STONE SEARCH SECTION -->
+
+              <div class="custom_padding"> <!-- STONE SELECTED SECTION -->
+                Stone (Egyptian  Marble)
+                <div class="col-sm-12 border_seperator well-lg text-center">
+                  <div style="padding-bottom: 15px;">
+                    <span>Stone: </span>
+                    <span>Egytian Marble</span>
+                  </div>
+                  <div>
+                    <a href="#">Back to list adn select another stone</a> |
+                    <a href="#">Technical Information</a>
+                  </div>
+                </div>
+              </div> <!-- END OF STONE SELECTED SECTION -->
+
+              <div class="custom_padding"> <!-- INPUT SLAB INFO SECTION -->
+                Slab
+                
+                <div class="col-sm-12 border_seperator" style="display: flex; flex-direction: column; padding: 15px 0px;">
+                  
+                  <div class="row upload_slab_image_section text-center">
+                    <div class="col-sm-4 thumbnail" style="width: 150px;">
+                      <a href="#">Click here to upload <br/> close-up photo</a> <br/>
+                      <div style="width: 100px; height: 50px; border: 1px solid;margin: 0 auto;">
+                        No <br/>Photo
+                      </div>
+                      <button href="#" class="btn btn-danger btn-xs">Remove</button> <br/>
+                      <a href="#">
+                        <img src="images/photo_macro.png" alt="...">
+                      </a> <br/>
+                    </div>
+                    
+                    <div class="col-sm-4 thumbnail" style="width: 150px;">
+                      <a href="#">Click here to upload <br/> center of slab photo</a> <br/>
+                      <div style="width: 100px; height: 50px; border: 1px solid;margin: 0 auto;">
+                        No <br/>Photo
+                      </div>
+                      <button href="#" class="btn btn-danger btn-xs">Remove</button> <br/>
+                      <a href="#">
+                        <img src="images/photo_medium.png" alt="...">
+                      </a> <br/>
+                    </div>
+                    
+                    <div class="col-sm-4 thumbnail" style="width: 150px;">
+                      <a href="#">Click here to upload <br/> whole slab photo</a> <br/>
+                      <div style="width: 100px; height: 50px; border: 1px solid;margin: 0 auto;">
+                        No <br/>Photo
+                      </div>
+                      <button href="#" class="btn btn-danger btn-xs">Remove</button> <br/>
+                      <a href="#">
+                        <img src="images/photo_wide.png" alt="...">
+                      </a> <br/>
+                    </div>
+                  </div>
+
+
+                  <div class="col-xs-12">
+                    <div class="col-sm-2"><strong>COLORS:</strong></div>
+                    <div class="col-sm-10 colors_selection">
+                      <div class="form-check form-check-inline" style="background-color:#000000;">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline" style="background-color:#6ea9e1;">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline" style="background-color:#8d5238;">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline" style="background-color:#ffda7a;">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline" style="background-color:#bbbbbb;">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline" style="background-color:#4a9d52;">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline" style="background-color:#ff5f5f;">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline" style="background-color:#ffffff;">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="col-sm-2"><strong>THICKNESS:</strong></div>
+                    <div class="col-sm-10 thickness_selection">
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Slab 1 1/4
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Slab 2
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Slab 3/4
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="col-sm-2"><strong>DIMENSIONS:</strong></div>
+                    <div class="col-sm-10 dimensions_selection">
+                      <span>
+                        width <input type="text" placeholder="0 inch" style="width: 50px;"> <strong> X </strong> <input type="text" placeholder="0 inch" style="width: 50px;"> height
+                      </span>
+                      <br/>
+                      <strong> OR </strong>
+                      <br/>
+                      <span>
+                        width <input type="text" placeholder="0 cm" style="width: 50px;"> <strong> X </strong> <input type="text" placeholder="0 cm" style="width: 50px;"> height
+                      </span>
+
+                    </div>
+
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="col-sm-2"><strong>SURFACE FINISH:</strong></div>
+                    <div class="col-sm-10 surface_finish_selection">
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Polished
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Honed
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Flamed
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> Sand Blasted
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"> Antique
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="col-sm-2"><strong>RESIN COAT:</strong></div>
+                    <div class="col-sm-10 resin_coat_selection">
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="col-sm-2"><strong>COUNTRY ORIGIN:</strong></div>
+                    <div class="col-sm-10 country_origin_selection">
+                      <select name="country" style="border: 1px solid #c7c7c7; width: 100%; max-width: 300px; ">
+                        <option name="0"></option>
+                        <option label="Afghanistan" value="af">Afghanistan</option>
+                        <option label="Albania" value="al">Albania</option>
+                        <option label="Algeria" value="dz">Algeria</option>
+                        <option label="American Samoa" value="as">American Samoa</option>
+                        <option label="Andorra" value="ad">Andorra</option>
+                        <option label="Angola" value="ao">Angola</option>
+                        <option label="Anguilla" value="ai">Anguilla</option>
+                        <option label="Antarctica" value="aq">Antarctica</option>
+                        <option label="Antigua and Barbuda" value="ag">Antigua and Barbuda</option>
+                        <option label="Argentina" value="ar">Argentina</option>
+                        <option label="Armenia" value="am">Armenia</option>
+                        <option label="Aruba" value="aw">Aruba</option>
+                        <option label="Australia" value="au">Australia</option>
+                        <option label="Austria" value="at">Austria</option>
+                        <option label="Azerbaijan" value="az">Azerbaijan</option>
+                        <option label="Bahamas" value="bs">Bahamas</option>
+                        <option label="Bahrain" value="bh">Bahrain</option>
+                        <option label="Bangladesh" value="bd">Bangladesh</option>
+                        <option label="Barbados" value="bb">Barbados</option>
+                        <option label="Belarus" value="by">Belarus</option>
+                        <option label="Belgium" value="be">Belgium</option>
+                        <option label="Belize" value="bz">Belize</option>
+                        <option label="Benin" value="bj">Benin</option>
+                        <option label="Bermuda" value="bm">Bermuda</option>
+                        <option label="Bhutan" value="bt">Bhutan</option>
+                        <option label="Bolivia" value="bo">Bolivia</option>
+                        <option label="Bosnia and Herzegovina" value="ba">Bosnia and Herzegovina</option>
+                        <option label="Botswana" value="bw">Botswana</option>
+                        <option label="Bouvet Island" value="bv">Bouvet Island</option>
+                        <option label="Brazil" value="br" selected="selected">Brazil</option>
+                        <option label="British Indian Ocean Territory" value="io">British Indian Ocean Territory</option>
+                        <option label="Brunei Darussalam" value="bn">Brunei Darussalam</option>
+                        <option label="Bulgaria" value="bg">Bulgaria</option>
+                        <option label="Burkina Faso" value="bf">Burkina Faso</option>
+                        <option label="Burundi" value="bi">Burundi</option>
+                        <option label="Cambodia" value="kh">Cambodia</option>
+                        <option label="Cameroon" value="cm">Cameroon</option>
+                        <option label="Canada" value="ca">Canada</option>
+                        <option label="Cape Verde" value="cv">Cape Verde</option>
+                        <option label="Cayman Islands" value="ky">Cayman Islands</option>
+                        <option label="Central African Republic" value="cf">Central African Republic</option>
+                        <option label="Chad" value="td">Chad</option>
+                        <option label="Chile" value="cl">Chile</option>
+                        <option label="China" value="cn">China</option>
+                        <option label="Christmas Island" value="cx">Christmas Island</option>
+                        <option label="Cocos (Keeling) Islands" value="cc">Cocos (Keeling) Islands</option>
+                        <option label="Colombia" value="co">Colombia</option>
+                        <option label="Comoros" value="km">Comoros</option>
+                        <option label="Congo" value="cg">Congo</option>
+                        <option label="Congo, the Democratic Republic of the" value="cd">Congo, the Democratic Republic of the</option>
+                        <option label="Cook Islands" value="ck">Cook Islands</option>
+                        <option label="Costa Rica" value="cr">Costa Rica</option>
+                        <option label="Cote D'Ivoire" value="ci">Cote D'Ivoire</option>
+                        <option label="Croatia" value="hr">Croatia</option>
+                        <option label="Cuba" value="cu">Cuba</option>
+                        <option label="Cyprus" value="cy">Cyprus</option>
+                        <option label="Czech Republic" value="cz">Czech Republic</option>
+                        <option label="Denmark" value="dk">Denmark</option>
+                        <option label="Djibouti" value="dj">Djibouti</option>
+                        <option label="Dominica" value="dm">Dominica</option>
+                        <option label="Dominican Republic" value="do">Dominican Republic</option>
+                        <option label="Ecuador" value="ec">Ecuador</option>
+                        <option label="Egypt" value="eg">Egypt</option>
+                        <option label="El Salvador" value="sv">El Salvador</option>
+                        <option label="Equatorial Guinea" value="gq">Equatorial Guinea</option>
+                        <option label="Eritrea" value="er">Eritrea</option>
+                        <option label="Estonia" value="ee">Estonia</option>
+                        <option label="Ethiopia" value="et">Ethiopia</option>
+                        <option label="Falkland Islands (Malvinas)" value="fk">Falkland Islands (Malvinas)</option>
+                        <option label="Faroe Islands" value="fo">Faroe Islands</option>
+                        <option label="Fiji" value="fj">Fiji</option>
+                        <option label="Finland" value="fi">Finland</option>
+                        <option label="France" value="fr">France</option>
+                        <option label="French Guiana" value="gf">French Guiana</option>
+                        <option label="French Polynesia" value="pf">French Polynesia</option>
+                        <option label="French Southern Territories" value="tf">French Southern Territories</option>
+                        <option label="Gabon" value="ga">Gabon</option>
+                        <option label="Gambia" value="gm">Gambia</option>
+                        <option label="Georgia" value="ge">Georgia</option>
+                        <option label="Germany" value="de">Germany</option>
+                        <option label="Ghana" value="gh">Ghana</option>
+                        <option label="Gibraltar" value="gi">Gibraltar</option>
+                        <option label="Greece" value="gr">Greece</option>
+                        <option label="Greenland" value="gl">Greenland</option>
+                        <option label="Grenada" value="gd">Grenada</option>
+                        <option label="Guadeloupe" value="gp">Guadeloupe</option>
+                        <option label="Guam" value="gu">Guam</option>
+                        <option label="Guatemala" value="gt">Guatemala</option>
+                        <option label="Guinea" value="gn">Guinea</option>
+                        <option label="Guinea-Bissau" value="gw">Guinea-Bissau</option>
+                        <option label="Guyana" value="gy">Guyana</option>
+                        <option label="Haiti" value="ht">Haiti</option>
+                        <option label="Heard Island and Mcdonald Islands" value="hm">Heard Island and Mcdonald Islands</option>
+                        <option label="Holy See (Vatican City State)" value="va">Holy See (Vatican City State)</option>
+                        <option label="Honduras" value="hn">Honduras</option>
+                        <option label="Hong Kong" value="hk">Hong Kong</option>
+                        <option label="Hungary" value="hu">Hungary</option>
+                        <option label="Iceland" value="is">Iceland</option>
+                        <option label="India" value="in">India</option>
+                        <option label="Indonesia" value="id">Indonesia</option>
+                        <option label="Ireland" value="ie">Ireland</option>
+                        <option label="Israel" value="il">Israel</option>
+                        <option label="Italy" value="it">Italy</option>
+                        <option label="Jamaica" value="jm">Jamaica</option>
+                        <option label="Japan" value="jp">Japan</option>
+                        <option label="Jordan" value="jo">Jordan</option>
+                        <option label="Kazakhstan" value="kz">Kazakhstan</option>
+                        <option label="Kenya" value="ke">Kenya</option>
+                        <option label="Kiribati" value="ki">Kiribati</option>
+                        <option label="Korea, Democratic People's Republic of" value="kp">Korea, Democratic People's Republic of</option>
+                        <option label="Korea, Republic of" value="kr">Korea, Republic of</option>
+                        <option label="Kuwait" value="kw">Kuwait</option>
+                        <option label="Kyrgyzstan" value="kg">Kyrgyzstan</option>
+                        <option label="Lao People's Democratic Republic" value="la">Lao People's Democratic Republic</option>
+                        <option label="Latvia" value="lv">Latvia</option>
+                        <option label="Lebanon" value="lb">Lebanon</option>
+                        <option label="Lesotho" value="ls">Lesotho</option>
+                        <option label="Liberia" value="lr">Liberia</option>
+                        <option label="Libyan Arab Jamahiriya" value="ly">Libyan Arab Jamahiriya</option>
+                        <option label="Liechtenstein" value="li">Liechtenstein</option>
+                        <option label="Lithuania" value="lt">Lithuania</option>
+                        <option label="Luxembourg" value="lu">Luxembourg</option>
+                        <option label="Macao" value="mo">Macao</option>
+                        <option label="Macedonia, the Former Yugoslav Republic of" value="mk">Macedonia, the Former Yugoslav Republic of</option>
+                        <option label="Madagascar" value="mg">Madagascar</option>
+                        <option label="Malawi" value="mw">Malawi</option>
+                        <option label="Malaysia" value="my">Malaysia</option>
+                        <option label="Maldives" value="mv">Maldives</option>
+                        <option label="Mali" value="ml">Mali</option>
+                        <option label="Malta" value="mt">Malta</option>
+                        <option label="Marshall Islands" value="mh">Marshall Islands</option>
+                        <option label="Martinique" value="mq">Martinique</option>
+                        <option label="Mauritania" value="mr">Mauritania</option>
+                        <option label="Mauritius" value="mu">Mauritius</option>
+                        <option label="Mayotte" value="yt">Mayotte</option>
+                        <option label="Mexico" value="mx">Mexico</option>
+                        <option label="Micronesia, Federated States of" value="fm">Micronesia, Federated States of</option>
+                        <option label="Moldova, Republic of" value="md">Moldova, Republic of</option>
+                        <option label="Monaco" value="mc">Monaco</option>
+                        <option label="Mongolia" value="mn">Mongolia</option>
+                        <option label="Montserrat" value="ms">Montserrat</option>
+                        <option label="Morocco" value="ma">Morocco</option>
+                        <option label="Mozambique" value="mz">Mozambique</option>
+                        <option label="Myanmar" value="mm">Myanmar</option>
+                        <option label="Namibia" value="na">Namibia</option>
+                        <option label="Nauru" value="nr">Nauru</option>
+                        <option label="Nepal" value="np">Nepal</option>
+                        <option label="Netherlands" value="nl">Netherlands</option>
+                        <option label="Netherlands Antilles" value="an">Netherlands Antilles</option>
+                        <option label="New Caledonia" value="nc">New Caledonia</option>
+                        <option label="New Zealand" value="nz">New Zealand</option>
+                        <option label="Nicaragua" value="ni">Nicaragua</option>
+                        <option label="Niger" value="ne">Niger</option>
+                        <option label="Nigeria" value="ng">Nigeria</option>
+                        <option label="Niue" value="nu">Niue</option>
+                        <option label="Norfolk Island" value="nf">Norfolk Island</option>
+                        <option label="Northern Mariana Islands" value="mp">Northern Mariana Islands</option>
+                        <option label="Norway" value="no">Norway</option>
+                        <option label="Oman" value="om">Oman</option>
+                        <option label="Pakistan" value="pk">Pakistan</option>
+                        <option label="Palau" value="pw">Palau</option>
+                        <option label="Palestinian Territory, Occupied" value="ps">Palestinian Territory, Occupied</option>
+                        <option label="Panama" value="pa">Panama</option>
+                        <option label="Papua New Guinea" value="pg">Papua New Guinea</option>
+                        <option label="Paraguay" value="py">Paraguay</option>
+                        <option label="Peru" value="pe">Peru</option>
+                        <option label="Philippines" value="ph">Philippines</option>
+                        <option label="Pitcairn" value="pn">Pitcairn</option>
+                        <option label="Poland" value="pl">Poland</option>
+                        <option label="Portugal" value="pt">Portugal</option>
+                        <option label="Puerto Rico" value="pr">Puerto Rico</option>
+                        <option label="Qatar" value="qa">Qatar</option>
+                        <option label="Reunion" value="re">Reunion</option>
+                        <option label="Romania" value="ro">Romania</option>
+                        <option label="Russian Federation" value="ru">Russian Federation</option>
+                        <option label="Rwanda" value="rw">Rwanda</option>
+                        <option label="Saint Helena" value="sh">Saint Helena</option>
+                        <option label="Saint Kitts and Nevis" value="kn">Saint Kitts and Nevis</option>
+                        <option label="Saint Lucia" value="lc">Saint Lucia</option>
+                        <option label="Saint Pierre and Miquelon" value="pm">Saint Pierre and Miquelon</option>
+                        <option label="Saint Vincent and the Grenadines" value="vc">Saint Vincent and the Grenadines</option>
+                        <option label="Samoa" value="ws">Samoa</option>
+                        <option label="San Marino" value="sm">San Marino</option>
+                        <option label="Sao Tome and Principe" value="st">Sao Tome and Principe</option>
+                        <option label="Saudi Arabia" value="sa">Saudi Arabia</option>
+                        <option label="Senegal" value="sn">Senegal</option>
+                        <option label="Serbia and Montenegro" value="cs">Serbia and Montenegro</option>
+                        <option label="Seychelles" value="sc">Seychelles</option>
+                        <option label="Sierra Leone" value="sl">Sierra Leone</option>
+                        <option label="Singapore" value="sg">Singapore</option>
+                        <option label="Slovakia" value="sk">Slovakia</option>
+                        <option label="Slovenia" value="si">Slovenia</option>
+                        <option label="Solomon Islands" value="sb">Solomon Islands</option>
+                        <option label="Somalia" value="so">Somalia</option>
+                        <option label="South Africa" value="za">South Africa</option>
+                        <option label="South Georgia and the South Sandwich Islands" value="gs">South Georgia and the South Sandwich Islands</option>
+                        <option label="Spain" value="es">Spain</option>
+                        <option label="Sri Lanka" value="lk">Sri Lanka</option>
+                        <option label="Sudan" value="sd">Sudan</option>
+                        <option label="Suriname" value="sr">Suriname</option>
+                        <option label="Svalbard and Jan Mayen" value="sj">Svalbard and Jan Mayen</option>
+                        <option label="Swaziland" value="sz">Swaziland</option>
+                        <option label="Sweden" value="se">Sweden</option>
+                        <option label="Switzerland" value="ch">Switzerland</option>
+                        <option label="Syrian Arab Republic" value="sy">Syrian Arab Republic</option>
+                        <option label="Taiwan, Province of China" value="tw">Taiwan, Province of China</option>
+                        <option label="Tajikistan" value="tj">Tajikistan</option>
+                        <option label="Tanzania, United Republic of" value="tz">Tanzania, United Republic of</option>
+                        <option label="Thailand" value="th">Thailand</option>
+                        <option label="Timor-Leste" value="tl">Timor-Leste</option>
+                        <option label="Togo" value="tg">Togo</option>
+                        <option label="Tokelau" value="tk">Tokelau</option>
+                        <option label="Tonga" value="to">Tonga</option>
+                        <option label="Trinidad and Tobago" value="tt">Trinidad and Tobago</option>
+                        <option label="Tunisia" value="tn">Tunisia</option>
+                        <option label="Turkey" value="tr">Turkey</option>
+                        <option label="Turkmenistan" value="tm">Turkmenistan</option>
+                        <option label="Turks and Caicos Islands" value="tc">Turks and Caicos Islands</option>
+                        <option label="Tuvalu" value="tv">Tuvalu</option>
+                        <option label="Uganda" value="ug">Uganda</option>
+                        <option label="Ukraine" value="ua">Ukraine</option>
+                        <option label="United Arab Emirates" value="ae">United Arab Emirates</option>
+                        <option label="United Kingdom" value="gb">United Kingdom</option>
+                        <option label="United States" value="us">United States</option>
+                        <option label="United States Minor Outlying Islands" value="um">United States Minor Outlying Islands</option>
+                        <option label="Uruguay" value="uy">Uruguay</option>
+                        <option label="Uzbekistan" value="uz">Uzbekistan</option>
+                        <option label="Vanuatu" value="vu">Vanuatu</option>
+                        <option label="Venezuela" value="ve">Venezuela</option>
+                        <option label="Viet Nam" value="vn">Viet Nam</option>
+                        <option label="Virgin Islands, British" value="vg">Virgin Islands, British</option>
+                        <option label="Virgin Islands, U.s." value="vi">Virgin Islands, U.s.</option>
+                        <option label="Wallis and Futuna" value="wf">Wallis and Futuna</option>
+                        <option label="Western Sahara" value="eh">Western Sahara</option>
+                        <option label="Yemen" value="ye">Yemen</option>
+                        <option label="Zambia" value="zm">Zambia</option>
+                        <option label="Zimbabwe" value="zw">Zimbabwe</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="col-sm-2"><strong>DESCRIPTION:</strong></div>
+                    <div class="col-sm-10 description_selection">
+                      <textarea style="width: 100% !important; max-width: 300px !important; height:100px; border: 1px solid #c7c7c7;"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="col-sm-2"><strong>PRICE:</strong></div>
+                    <div class="col-sm-10 price_selection">
+                      <select name="country" style="border: 1px solid #c7c7c7; width: 100%; max-width: 75px; ">
+                        <option label="USD" value="usd">USD</option>
+                        <option label="EUR" value="eur">EUR</option>
+                      </select>
+                      <input style="width: 50px"/>/sq.ft.
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 account_inventory_new_buttons" style="">
+                    <button class="btn btn-default btn-md" style="">Save and Add Another Slab</button>
+                    <button class="btn btn-default btn-md" style="">Save and Return to Inventory</button>
+                    <button class="btn btn-default btn-md" style="">Cancel</button>
+                  </div>
+
+
+                </div>
+
+              </div> <!-- END OF INPUT SLAB INFO SECTION -->
+
+            </div>
+          </div>
+          
+        </div> <!-- End Column -->
+      </div> <!-- End Row -->
+
+
+    </div> <!-- End of MAIN CONTAINER -->
+  </div> <!-- End of Container-Fluid -->
+
+
+
+  <!-- ================================== Footer Section ==================================== -->
+  <footer>
+    <div class="container-fluid panel-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9"> 
+            <ul class="footer_navi">
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="terms-of-use.html">Terms of Use</a></li>
+              <li><a href="terms-of-sale.html">Terms of Sale</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 copy_right">
+            <p>SlabMarket - <span class="glyphicon glyphicon-copyright-mark"></span> 2004 - 2017 <br/> All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ============================== End of Footer Section ================================= -->
+
+</body>
+
+</html>

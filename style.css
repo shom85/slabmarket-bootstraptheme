@@ -40,6 +40,12 @@ p, li {
 	    justify-content: flex-end;
 	}
 }
+@media screen and (max-width: 767px){
+	.container-fluid {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
 /*-------------------------------------------*/
 
 
@@ -542,5 +548,96 @@ and also iPads specifically.
     padding: 6px 0;
     font-size: 12px;
     line-height: 1.428571429;
-    border-radius: 15px;
+    border-radius: 1	5px;
+}
+
+
+
+
+
+
+
+
+/*Account Inventory New Page*/
+.border_seperator {
+	border: 1px solid;
+	margin-bottom: 15px;
+}
+.custom_padding {
+	padding: 15px;
+}
+.upload_slab_image_section {
+	display: flex;
+	justify-content: space-around;
+}
+.border_seperator > div {
+	    padding-bottom: 15px;
+	}
+@media screen and (max-width: 650px) {
+	.thickness_selection, .surface_finish_selection {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.upload_slab_image_section {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 767px) {
+	.border_seperator > div {
+	    padding: 15px 0px;
+	}
+}
+
+.colors_selection, .thickness_selection, .surface_finish_selection, .resin_coat_selection {
+	display: flex;
+	/*padding-bottom: 30px;*/
+}
+
+.dimensions_selection, .country_origin_selection, .description_selection {
+	/*padding-bottom: 30px;*/
+}
+
+.colors_selection .form-check {
+	/*padding-right: 30px;
+	margin-right: 10px;
+    padding-left: 7px;*/
+    width: 40px;
+    margin-right: 5px;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+}
+.thickness_selection .form-check {
+	padding-right: 30px;
+	margin-right: 5px;
+}
+
+.surface_finish_selection .form-check {
+	padding-right: 30px;
+}
+
+.resin_coat_selection .form-check {
+	padding-right: 30px;
+}
+
+.account_inventory_new_buttons {
+	display: flex;
+	justify-content: center;
+	padding-top:15px;
+}
+
+.account_inventory_new_buttons > button {
+	margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+	.account_inventory_new_buttons {
+		display: block;
+	}
+	.account_inventory_new_buttons > button {
+		display: block;
+		margin: 15px auto;
+	}
 }
